@@ -1,38 +1,70 @@
-# .
+# Edura
 
-This template should help get you started developing with Vue 3 in Vite.
+Education platform frontend built with **Vue 3, Vue Router, and Vite**. The project organizes its interface into reusable components, shared styles, and separate page views.
 
-## Recommended IDE Setup
+## Project overview
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Edura presents an education platform through a landing page and dedicated contact, login, and sign-up views. Its component structure separates navigation, page content, and shared UI elements.
 
-## Recommended Browser Setup
+This repository contains the frontend. The presence of login and sign-up views does not by itself establish a working authentication backend.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Interface components
 
-## Customize configuration
+- Landing-page sections for the hero, platform overview, and how it works.
+- Audience cards, pricing, reviews, FAQ, and a get-started section.
+- Shared navigation and footer.
+- Reusable button component and centralized base and theme styles.
+- Contact, login, and sign-up page views.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Technology
 
-## Project Setup
+| Category | Tools |
+| --- | --- |
+| Framework | Vue 3 |
+| Routing | Vue Router |
+| Build tooling | Vite |
+| Styling | CSS, Font Awesome |
+| Language | JavaScript |
 
-```sh
-npm install
-```
+## Run locally
 
-### Compile and Hot-Reload for Development
+Use a Node.js version matching the package requirement: `^22.18.0 || >=24.12.0`.
 
-```sh
+```bash
+git clone https://github.com/minahiljaved189-creator/Edura.git
+cd Edura
+npm ci
 npm run dev
 ```
 
-### Compile and Minify for Production
+Open the local URL printed by Vite.
 
-```sh
+## Production build
+
+```bash
 npm run build
+npm run preview
 ```
+
+The build is written to `dist/`. The preview command serves that build locally.
+
+## Repository structure
+
+```text
+src/
+  assets/
+    css/               # Base and theme styles
+    images/            # Project branding
+  components/
+    common/            # Reusable UI components
+    home/              # Landing-page sections
+    layout/            # Navigation and footer
+  router/              # Page routes
+  views/               # Home, Contact, Login, SignUp
+  App.vue
+  main.js
+```
+
+## Explore more
+
+[Developer profile](https://github.com/minahiljaved189-creator) · [LinkedIn](https://www.linkedin.com/in/minahil-javed-41878840b)
